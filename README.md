@@ -9,5 +9,6 @@ The USGS is interested in building a new set of tools that will allow them to vi
 
 For this assignment I used in-class examples, office hours and study group. 
 
+Specific websites:
 
 https://roh.engineering/posts/2021/05/map-symbols-and-size-legends-for-leaflet/

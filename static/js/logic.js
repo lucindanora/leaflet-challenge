@@ -1,5 +1,5 @@
 // Store API endpoint as queryURL.
-let queryURL = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson";
+let queryURL = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson";
 
 // Define earthquake layer in the global scope
 let earthquake;
@@ -76,7 +76,7 @@ function createMap(earthquakes) {
         // Add the legend title.
         div.innerHTML += "<h3 style='text-align: center'>Depth</h3>";
         // Add the legend labels with more colors and larger size.
-        for (let i = 0; i < depthRanges.length - 1; i++) {
+        for (let i = 0; i < depthRanges.length; i++) {
             labels.push(
                 '<i style="background:' +
                 getColor(depthRanges[i] + 1) +
