@@ -80,13 +80,17 @@ function createMap(earthquakes) {
             labels.push(
                 '<i style="background:' +
                 getColor(depthRanges[i] + 1) +
-                '; width: 20px; height: 30px; display: inline-block;"></i> ' +
+                '; width: 30px; height: 30px; display: inline-block;"></i> ' +
                 depthRanges[i] +
                 (depthRanges[i + 1] ? '&ndash;' + depthRanges[i + 1] + '<br>' : '+')
             );
         }
         // Add the labels to the legend.
         div.innerHTML += "<div style='font-size: 14px;'>" + labels.join("") + "</div>";
+        //add border to legend
+        div.style.border = '2px solid black';
+        div.style.padding = '10px'; // Optional: Add padding for better appearance.
+
         return div;
     };
     legend.addTo(myMap);
