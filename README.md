@@ -1,7 +1,7 @@
 ## leaflet-challenge
 ## module 15
 
-URL: https://lucindanora.github.io/leaflet-challenge/
+Visualization Deployment URL: https://lucindanora.github.io/leaflet-challenge/
 
 Assignment:
 
